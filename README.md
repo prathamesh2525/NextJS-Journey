@@ -1,3 +1,7 @@
+# My NextJS Journey ->
+
+- Day 1: Covered NextJS routing (static, nested, dynamic) and NextJS router.
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
