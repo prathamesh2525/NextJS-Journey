@@ -13,7 +13,7 @@ export const getStaticPaths = async () => {
   const allUsersIds = data.users.map((user) => user.id)
 
   console.log("All USers Ids", allUsersIds)
- 
+  
   return {
     paths: allUsersIds.map((userId) => ({ params: { id: `${userId}` } })),
     fallback: false,

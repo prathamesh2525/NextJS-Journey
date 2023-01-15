@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react"
 import Link from "next/link"
 import useSWR from "swr"
 
+import styles from "../../styles/user.module.css"
+
 const userFetcher = (...args) => fetch(...args).then((res) => res.json())
 
 const UserPage = () => {
@@ -14,10 +16,10 @@ const UserPage = () => {
   if (!data) return <h1>loading....</h1>
   return (
     <div>
-      <h1>This is User Page</h1> 
+      <h1>This is User Page</h1>
       {data.users &&
         data.users.map((user) => (
-          <Link href={`/user/${user.id}`} key={user.id}>
+          <Link className={styles.text} href={`/user/${user.id}`} key={user.id}>
             <div>{user.firstName}</div>
           </Link>
         ))}
