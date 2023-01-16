@@ -127,3 +127,17 @@
     filter: invert(1);
   }
 }
+
+.btn {
+  width: auto;
+  margin-top: 10px;
+  margin-left: 10px;
+  padding: 10px;
+  font-family: monospace;
+  font-weight: bold;
+  font-size: larger;
+  border-radius: 10px;
+  border: none;
+  transition: width 2s;
+  cursor: pointer;
+}
